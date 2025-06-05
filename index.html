@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.147.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title>
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+<script src="/js/script.js"></script>
+
+</head>
+<body>
+  <nav>
+  <a href="/">
+    <img src="https://raw.githubusercontent.com/msmwolf/MSMWOLF/refs/heads/main/wolf%20logo%20(1).gif" alt="Logo" class="logo">
+  </a>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#contact">Contact</a>
+  </div>
+</nav>
+
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/msmwolf/MSMWOLF/refs/heads/main/finalGifW01F.gif" alt="Profile Image" style="width: 200px; height: 200px; object-fit: cover;" />
+</div>
+
+  
+<div class="top">
+  <div class="whoami">[~]$ whoami_</div>
+  <div class="typewriter glitch" id="typewriter" data-text=""></div>
+</div>
+
+
+<div class="terminal">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+  </div>
+  <div class="terminal-content">
+    ┌──(root💀MSMW01F)-[~]
+└─$ whoami
+> Penetration Tester | Adversary Emulator
+> Web, Mobile, API & Network Security Specialist
+> Red Teamer (Phishing & Password Spraying)
+> OffSec Blogger | TTP Explorer
+> Location: /India/NaviMumbai
+
+┌──(root💀MSMW01F)-[~]
+└─$ pwd
+> /engagements/web-mobile-api/vuln-assessments
+
+┌──(root💀MSMW01F)-[~]
+└─$ cat skills.txt
+> Web | Mobile | API | Network PT
+> Phishing Campaigns | Credential Attacks
+> Burp Suite | Gophish | Nmap | Wireshark | Metasploit
+> JWT, IDOR, SSRF, RCE, Token Abuse
+> Python | Bash | Custom Scripts & Reports
+  </div>
+</div>
+
+<script>
+    const texts = [
+      "Security Consultant",
+      "VAPT Specialist",
+      "Offensive Security Enthusiast"
+    ];
+    let index = 0;
+    let charIndex = 0;
+    const typewriter = document.getElementById('typewriter');
+
+    function typeEffect() {
+      if (charIndex < texts[index].length) {
+        typewriter.textContent += texts[index].charAt(charIndex);
+        typewriter.setAttribute("data-text", typewriter.textContent);
+        charIndex++;
+        setTimeout(typeEffect, 100);
+      } else {
+        setTimeout(() => {
+          typewriter.textContent = "";
+          typewriter.setAttribute("data-text", "");
+          charIndex = 0;
+          index = (index + 1) % texts.length;
+          typeEffect();
+        }, 2000);
+      }
+    }
+
+    typeEffect();
+  </script>
+
+
+  <section id="contact">
+  <h1>Contact Me</h1>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/msmw01f/" target="_blank">
+      <div class="icon-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+        <div class="tooltip">Instagram</div>
+      </div>
+    </a>
+    <a href="https://github.com/msmwolf/" target="_blank">
+      <div class="icon-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
+        <div class="tooltip">GitHub</div>
+      </div>
+    </a>
+    <a href="https://linkedin.com/in/mohitmhaske" target="_blank">
+      <div class="icon-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+        <div class="tooltip">LinkedIn</div>
+      </div>
+    </a>
+  </div>
+</section>
+</body>
+</html>
+
